@@ -20,7 +20,7 @@ Usage:
 - [Kill Sticky](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Kill%20Sticky.plist): Remove sticky elements and restore scrolling to web pages. Uses [this kill sticky snippet](https://github.com/t-mart/kill-sticky).
 - [Translate with Google](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Translate%20with%20Google.plist): Re-loads the page in Google Translate for automatic translation.
 - [Modern CSS](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Modern%20CSS.plist): Applies modern CSS to the page. Useful for pages with no styles. Test [here](https://danluu.com/futurist-predictions/). Uses [Water.css stylesheet](https://watercss.kognise.dev/).
-- [Classic CSS](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Classic%20CSS.plist): Applies classic web era CSS to the page. Useful for pages with no styles. Test [here](https://danluu.com/futurist-predictions/). Uses [this 'old style' W3C stylesheet](https://www.w3.org/StyleSheets/Core/preview).
+- [Classic CSS](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Classic%20CSS.plist): Applies classic web era CSS to the page. Useful for pages with no styles. Test [here](https://danluu.com/futurist-predictions/). Uses ['old style' W3C stylesheet](https://www.w3.org/StyleSheets/Core/preview).
 
 ### AI buttons
 
