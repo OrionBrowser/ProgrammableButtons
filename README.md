@@ -14,14 +14,14 @@ Copy the link to the below buttons to import them in Orion. To import right clic
 
 ### AI buttons
 
-[Unbiased News](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Unbiased%20News.plist) - Uses OpenAI API to produce unbiased rewrite of the news article. Make sure to replace apiKey in the code after importing.
-[Summarize](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Summarize.plist) - Uses OpenAI API to produce summary of the page. Make sure to replace apiKey in the code after importing.
-[Stock Analysis](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Unbiased%20News.plist) - Uses OpenAI API to produce stock analysis based on the content of the page. Works best on financial sites like seekingalpha.com. Make sure to replace apiKey in the code after importing.
+- [Unbiased News](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Unbiased%20News.plist): Uses OpenAI API to produce unbiased rewrite of the news article. Make sure to replace apiKey in the code after importing.
+- [Summarize](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Summarize.plist): Uses OpenAI API to produce summary of the page. Make sure to replace apiKey in the code after importing.
+- [Stock Analysis](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Unbiased%20News.plist): Uses OpenAI API to produce stock analysis based on the content of the page. Works best on financial sites like seekingalpha.com. Make sure to replace apiKey in the code after importing.
 
 ## Browser interactions
 
-[Dark Mode] - 
-[Kill Sticky] - 
+[Dark Mode](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Dark%20Mode.plist): Attempts to enable Dark Mode on the page. Uses [this dark mode snippet](https://github.com/OrionBrowser/DarkMode).
+[Kill Sticky](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Kill%20Sticky.plist): Remove sticky elements and restore scrolling to web pages. Uses [this kill sticky snippet](https://github.com/t-mart/kill-sticky).
 
 ## Example 
 
