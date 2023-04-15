@@ -1,7 +1,10 @@
 # Programmable Buttons
 
-Open source code snippets for programmable buttons in Orion browser.
+This repository contains open-source code snippets for programmable buttons in Orion browser.
 
+Orion is modern, high performance, WebKit based, zero-telemetry browser for Apple devices.
+
+[Download Orion](https://browser.kagi.com).
 
 ## Unbiased News
 
