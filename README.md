@@ -1,5 +1,7 @@
 # Programmable Buttons
 
+[![](https://dcbadge.vercel.app/api/server/gKh5E6ys6D?compact=true&style=flat)](https://discord.gg/gKh5E6ys6D) [![Twitter](https://img.shields.io/twitter/follow/KagiHQ?style=social)](https://twitter.com/KagiHQ) [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/license/mit/) 
+
 This repository contains open-source code snippets for programmable buttons in Orion browser.
 
 Orion is modern, high performance, WebKit based, zero-telemetry browser for Apple devices.
