@@ -12,7 +12,7 @@ Orion is modern, high performance, WebKit based, zero-telemetry browser for Appl
 
 We made a few examples of how to leverage Orion's programmable buttons.
 
-Right click and copy the link. Then, right click Orion toolbar and then select "Import Button from URL".
+Right click and copy the link. Then, right click Orion toolbar and then select "Import Button from URL". You can also open the plist files
 
 ### Browser interactions
 
@@ -28,12 +28,21 @@ Right click and copy the link. Then, right click Orion toolbar and then select "
 - [Summarize](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Summarize.plist): Uses OpenAI API to produce summary of the page. Make sure to replace apiKey in the code after importing.
 - [Stock Analysis](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Unbiased%20News.plist): Uses OpenAI API to produce stock analysis based on the content of the page. Works best on financial sites like seekingalpha.com. Make sure to replace apiKey in the code after importing.
 
+### Pro tip
+
+You can inspect the code, icons and options used in the button by converting the file into a more readable format like xml.
+
+For example:
+```
+plutil -convert xml1 -o Summarize.xml Summarize.plist
+```
 
 ## Example 
 
-The following code connects to OpenAI API (change apiKey with [your own](https://platform.openai.com/account/api-keys)) and summarizes the text on the page. It uses streaming support to stream the output directly into Orion sidebar.
+The following is a demonstration of the code used to power the 'Summarize' button.
 
-Make sure to enable Sidebar button in the button settings.
+The code connects to OpenAI API (change apiKey with [your own](https://platform.openai.com/account/api-keys)) and sends a prompt that will summarizes the text on the page. It uses OrionInternals.setSidebarContent(summary)  method to update Orions sidebar.
+
 
 ```
 (async () => {
