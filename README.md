@@ -5,7 +5,7 @@ Open source code snippets for programmable buttons in Orion browser.
 
 ## Unbiased News
 
-
+```
 (async () => {
     const apiKey = 'your_api_key_here';
     const text = document.title + ' ' + Array.from(document.querySelectorAll('p')).map(p => p.innerText).join(' ');
@@ -60,6 +60,7 @@ Open source code snippets for programmable buttons in Orion browser.
     } else {
         console.error('API request failed:', await response.text());
     }
+ ```
 })();
 
 
