@@ -8,7 +8,26 @@ Orion is modern, high performance, WebKit based, zero-telemetry browser for Appl
 
 [Download Orion](https://browser.kagi.com).
 
-## Unbiased News
+## Buttons
+
+Copy the link to the below buttons to import them in Orion. To import right click toolbar and then select "Import Button from URL".
+
+### AI buttons
+
+[Unbiased News](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Unbiased%20News.plist) - Uses OpenAI API to produce unbiased rewrite of the news article. Make sure to replace apiKey in the code after importing.
+[Summarize](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Summarize.plist) - Uses OpenAI API to produce summary of the page. Make sure to replace apiKey in the code after importing.
+[Stock Analysis](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Unbiased%20News.plist) - Uses OpenAI API to produce stock analysis based on the content of the page. Works best on financial sites like seekingalpha.com. Make sure to replace apiKey in the code after importing.
+
+## Browser interactions
+
+[Dark Mode] - 
+[Kill Sticky] - 
+
+## Example 
+
+The following code connects to OpenAI API (change apiKey with [your own](https://platform.openai.com/account/api-keys)) and summarizes the text on the page. It uses streaming support to stream the output directly into Orion sidebar.
+
+Make sure to enable Sidebar button in the button settings.
 
 ```
 (async () => {
@@ -17,11 +36,13 @@ Orion is modern, high performance, WebKit based, zero-telemetry browser for Appl
     const requestBody = {
         'model': 'gpt-3.5-turbo',
         'messages': [
-            {'role': 'system', 'content': '- Rewrite the  article to make it informative, truth-focused, and neutral.\n- Using the heading "Biases", describe the biases (with examples) of the original article (in bullet points)\n- Using the heading  "Other issues",  describe (with examples) the logical contradictions and fallacies in the original (in bullet points)\n- Rate the journalism in the original article with a "Journalism score" between 1 -10 based on the quality of journalism . 1/10 means extremely biased journalism with clear agenda and 10/10 is informative, objective journalism. '},
+            {'role': 'system', 'content': 'Summarize this text.'},
             {'role': 'user', 'content': `${text}`}
         ],
         'max_tokens': 800,
+        'temperature': 0,
         'stream': true
+
     };
 
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
