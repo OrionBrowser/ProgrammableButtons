@@ -8,9 +8,7 @@ Orion is modern, high performance, WebKit based, zero-telemetry browser for Appl
 
 [Download Orion browser by Kagi](https://browser.kagi.com).
 
-## Buttons
-
-We made a few examples of how to leverage Orion's programmable buttons.
+## Programamble Buttons demos
 
 Usage:
 - Right click and copy the link to the button. 
