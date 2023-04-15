@@ -6,7 +6,7 @@ This repository contains open-source code snippets for programmable buttons in O
 
 Orion is modern, high performance, WebKit based, zero-telemetry browser for Apple devices.
 
-[Download Orion browser](https://browser.kagi.com).
+[Download Orion browser by Kagi](https://browser.kagi.com).
 
 ## Buttons
 
