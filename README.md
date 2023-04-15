@@ -6,15 +6,17 @@ This repository contains open-source code snippets for programmable buttons in O
 
 Orion is modern, high performance, WebKit based, zero-telemetry browser for Apple devices.
 
-[Download Orion](https://browser.kagi.com).
+[Download Orion browser](https://browser.kagi.com).
 
 ## Buttons
 
 We made a few examples of how to leverage Orion's programmable buttons.
 
-Right click and copy the link. Then, right click Orion toolbar and then select "Import Button from URL". You can also open the plist files
+Usage:
+- Right click and copy the link to the button. 
+- Right click Orion toolbar and select "Import Button from URL". 
 
-### Browser interactions
+### Browser interaction buttons
 
 - [Dark Mode](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Dark%20Mode.plist): Attempts to enable Dark Mode on the page. Uses [this dark mode snippet](https://github.com/OrionBrowser/DarkMode).
 - [Kill Sticky](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Kill%20Sticky.plist): Remove sticky elements and restore scrolling to web pages. Uses [this kill sticky snippet](https://github.com/t-mart/kill-sticky).
