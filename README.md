@@ -10,7 +10,17 @@ Orion is modern, high performance, WebKit based, zero-telemetry browser for Appl
 
 ## Buttons
 
-Copy the link to the below buttons to import them in Orion. To import right click toolbar and then select "Import Button from URL".
+We made a few examples of how to leverage Orion's programmable buttons.
+
+Right click and copy the link. Then, right click Orion toolbar and then select "Import Button from URL".
+
+### Browser interactions
+
+- [Dark Mode](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Dark%20Mode.plist): Attempts to enable Dark Mode on the page. Uses [this dark mode snippet](https://github.com/OrionBrowser/DarkMode).
+- [Kill Sticky](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Kill%20Sticky.plist): Remove sticky elements and restore scrolling to web pages. Uses [this kill sticky snippet](https://github.com/t-mart/kill-sticky).
+- [Translate with Google](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Translate%20with%20Google.plist): Re-loads the page in Google Translate for automatic translation.
+- [Modern CSS](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Modern%20CSS.plist): Applies modern CSS to the page. Useful for pages with no styles. Test [here](https://danluu.com/futurist-predictions/). Uses [Water.css stylesheet](https://watercss.kognise.dev/).
+- [Classic CSS](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Classic%20CSS.plist): Applies classic web era CSS to the page. Useful for pages with no styles. Test [here](https://danluu.com/futurist-predictions/). Uses [this 'old style' W3C stylesheet](https://www.w3.org/StyleSheets/Core/preview).
 
 ### AI buttons
 
@@ -18,10 +28,6 @@ Copy the link to the below buttons to import them in Orion. To import right clic
 - [Summarize](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Summarize.plist): Uses OpenAI API to produce summary of the page. Make sure to replace apiKey in the code after importing.
 - [Stock Analysis](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Unbiased%20News.plist): Uses OpenAI API to produce stock analysis based on the content of the page. Works best on financial sites like seekingalpha.com. Make sure to replace apiKey in the code after importing.
 
-## Browser interactions
-
-[Dark Mode](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Dark%20Mode.plist): Attempts to enable Dark Mode on the page. Uses [this dark mode snippet](https://github.com/OrionBrowser/DarkMode).
-[Kill Sticky](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Kill%20Sticky.plist): Remove sticky elements and restore scrolling to web pages. Uses [this kill sticky snippet](https://github.com/t-mart/kill-sticky).
 
 ## Example 
 
