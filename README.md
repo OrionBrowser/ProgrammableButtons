@@ -30,6 +30,8 @@ Usage:
 
 ## Demo
 
+Cick the thumbnail to watch the video.
+
 [![Watch the video](https://img.youtube.com/vi/xoJliN5Pwv8/hqdefault.jpg)](https://www.youtube.com/watch?v=xoJliN5Pwv8)
 
 ## Pro tip
