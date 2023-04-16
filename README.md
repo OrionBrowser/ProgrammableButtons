@@ -28,7 +28,11 @@ Usage:
 - [Summarize](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Summarize.plist): Uses OpenAI API to produce summary of the page. Make sure to replace apiKey in the code after importing.
 - [Stock Analysis](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Unbiased%20News.plist): Uses OpenAI API to produce stock analysis based on the content of the page. Works best on financial sites like seekingalpha.com. Make sure to replace apiKey in the code after importing.
 
-### Pro tip
+## Demo
+
+[![Watch the video](https://img.youtube.com/vi/xoJliN5Pwv8/hqdefault.jpg)](https://www.youtube.com/watch?v=xoJliN5Pwv8)
+
+## Pro tip
 
 You can inspect the code, icons and options used in the button by converting the file into a more readable format like xml.
 
