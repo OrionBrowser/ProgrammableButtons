@@ -24,6 +24,8 @@ Usage:
 
 ### AI buttons
 
+You will need to input your OpenAI API key in the code for these to work. When you import the button, right click it, select edit, switch to code, and then replace OpenAI API key on the top of the code.
+
 - [Unbiased News](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Unbiased%20News.plist): Uses OpenAI API to produce unbiased rewrite of the news article. Make sure to replace apiKey in the code after importing.
 - [Summarize](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Summarize.plist): Uses OpenAI API to produce summary of the page. Make sure to replace apiKey in the code after importing. This is just a proof of concept and will not work with all pages. For a more robust summarization API, consider using [Universal Summarizer](https://kagi.com/summarizer). 
 - [Stock Analysis](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Unbiased%20News.plist): Uses OpenAI API to produce stock analysis based on the content of the page. Works best on financial sites like seekingalpha.com. Make sure to replace apiKey in the code after importing.
