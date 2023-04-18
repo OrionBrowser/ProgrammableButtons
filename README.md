@@ -47,6 +47,44 @@ plutil -convert xml1 -o Summarize.xml Summarize.plist
 
 ## Example 
 
+### External API call
+
+The code will call an external API and display result in Orion sidebar.
+
+```
+    (async () => {
+        const apiKey = 'your_api_key';
+        const text = document.title + ' ' + Array.from(document.querySelectorAll('p')).map(p => p.innerText).join(' ');
+        const requestBody = {
+            'model': 'gpt-3.5-turbo',
+            'messages': [
+                { 'role': 'system', 'content': 'Your task is to summarise the text I have given you in up to seven concise bullet points, starting with a short highlight. \nYour output should use the following template: \nSummary \nHighlights \n-  Bulletpoint \n"' },
+                { 'role': 'user', 'content': `${text}` }
+            ],
+            'max_tokens': 800,
+            'temperature': 0
+        };
+
+        const response = await fetch('https://api.openai.com/v1/chat/completions', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Authorization': `Bearer ${apiKey}`
+            },
+            body: JSON.stringify(requestBody)
+        });
+
+        if (response.ok) {
+            const data = await response.json();
+            const summary = data.choices[0].message.content;
+            OrionInternals.setSidebarContent(summary)
+        } else {
+            console.error('API request failed:', await response.text());
+        }
+    })();
+ ```
+
+### Streaming response from OpenAI API
 The following is a demonstration of the code used to power the 'Summarize' button.
 
 The code connects to OpenAI API (change apiKey with [your own](https://platform.openai.com/account/api-keys)) and sends a prompt that will summarizes the text on the page. It uses OrionInternals.setSidebarContent(summary)  method to update Orions sidebar.
@@ -54,18 +92,17 @@ The code connects to OpenAI API (change apiKey with [your own](https://platform.
 
 ```
 (async () => {
-    const apiKey = 'your_api_key_here';
+    const apiKey = 'your_api_key';
     const text = document.title + ' ' + Array.from(document.querySelectorAll('p')).map(p => p.innerText).join(' ');
     const requestBody = {
         'model': 'gpt-3.5-turbo',
         'messages': [
-            {'role': 'system', 'content': 'Summarize this text.'},
-            {'role': 'user', 'content': `${text}`}
+            { 'role': 'system', 'content': 'Your task is to summarise the text I have given you in up to seven concise bullet points, starting with a short highlight. \nYour output should use the following template: \nSummary \nHighlights \n-  Bulletpoint \n"' },
+            { 'role': 'user', 'content': `${text}` }
         ],
         'max_tokens': 800,
         'temperature': 0,
         'stream': true
-
     };
 
     const response = await fetch('https://api.openai.com/v1/chat/completions', {
@@ -82,29 +119,29 @@ The code connects to OpenAI API (change apiKey with [your own](https://platform.
         const decoder = new TextDecoder('utf-8');
         let summary = '';
 
-      while (true) {
-        const { value, done } = await reader.read();
-        if (done) {
-            break;
-        }
-        const lines = decoder.decode(value).split('\n').filter(line => line.trim() !== '');
-        for (const line of lines) {
-            const message = line.replace(/^data: /, '');
-            if (message === '[DONE]') {
+        while (true) {
+            const { value, done } = await reader.read();
+            if (done) {
                 break;
             }
-            try {
-                const parsed = JSON.parse(message);
-                const content = parsed.choices?.[0]?.delta?.content;
-                if (content) {
-                    summary += content;
-                    OrionInternals.setSidebarContent(summary);
+            const lines = decoder.decode(value).split('\n').filter(line => line.trim() !== '');
+            for (const line of lines) {
+                const message = line.replace(/^data: /, '');
+                if (message === '[DONE]') {
+                    break;
                 }
-            } catch (error) {
-                console.error('Could not JSON parse stream message', message, error);
+                try {
+                    const parsed = JSON.parse(message);
+                    const content = parsed.choices && parsed.choices[0] && parsed.choices[0].delta && parsed.choices[0].delta.content;
+                    if (content) {
+                        summary += content;
+                        OrionInternals.setSidebarContent(summary);
+                    }
+                } catch (error) {
+                    console.error('Could not JSON parse stream message', message, error);
+                }
             }
         }
-      }
 
     } else {
         console.error('API request failed:', await response.text());
