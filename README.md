@@ -31,7 +31,7 @@ You will need to input your OpenAI API key in the code for these to work. When y
 - [Stock Analysis](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Unbiased%20News.plist): Uses OpenAI API to produce stock analysis based on the content of the page. Works best on financial sites like seekingalpha.com. Make sure to replace apiKey in the code after importing.
 
 ## Community Buttons
-Community members are welcome to contribute their own programmable buttons in the [Community Buttons folder](https://github.com/OrionBrowser/ProgrammableButtons/tree/main/community_buttons).
+Community members are welcome to contribute their own programmable buttons in the [Community Buttons folder](https://github.com/OrionBrowser/ProgrammableButtons/tree/main/community_buttons/).
 
 Currently available are:
 - [Copy page link as Markdown](https://github.com/OrionBrowser/ProgrammableButtons/blob/main/community_buttons/Copy%20page%20link%20as%20Markdown.plist): Copies the page link as a Markdown link.
