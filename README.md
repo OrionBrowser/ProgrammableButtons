@@ -30,6 +30,12 @@ You will need to input your OpenAI API key in the code for these to work. When y
 - [Summarize](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Summarize.plist): Uses OpenAI API to produce summary of the page. Make sure to replace apiKey in the code after importing. This is just a proof of concept and will not work with all pages. For a more robust summarization API, consider using [Universal Summarizer](https://kagi.com/summarizer). 
 - [Stock Analysis](https://github.com/OrionBrowser/ProgrammableButtons/raw/main/buttons/Unbiased%20News.plist): Uses OpenAI API to produce stock analysis based on the content of the page. Works best on financial sites like seekingalpha.com. Make sure to replace apiKey in the code after importing.
 
+## Community Buttons
+Community members are welcome to contribute their own programmable buttons in the Community Buttons folder.
+Currently available are:
+- [Copy page link as Markdown](https://github.com/OrionBrowser/ProgrammableButtons/blob/main/community_buttons/Copy%20page%20link%20as%20Markdown.plist): Copies the page link as a Markdown link.
+- [Discuss document or page](https://github.com/OrionBrowser/ProgrammableButtons/blob/main/community_buttons/Discuss%20doc%20or%20page.plist): Ask questions or discuss a document or page via AI chat.
+
 ## Demo
 
 Cick the thumbnail to watch the video.
