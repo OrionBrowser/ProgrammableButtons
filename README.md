@@ -36,6 +36,7 @@ Community members are welcome to contribute their own programmable buttons in th
 Currently available are:
 - [Copy page link as Markdown](https://github.com/OrionBrowser/ProgrammableButtons/blob/main/community_buttons/Copy%20page%20link%20as%20Markdown.plist): Copies the page link as a Markdown link.
 - [Discuss document or page](https://github.com/OrionBrowser/ProgrammableButtons/blob/main/community_buttons/Discuss%20doc%20or%20page.plist): Ask questions or discuss a document or page via AI chat.
+- [Remove YT playlist URL](https://github.com/OrionBrowser/ProgrammableButtons/blob/main/community_buttons/Remove%20YT%20Playlist%20URL.plist): Remove the playlist part of the YouTube video URL.
 
 ## Demo
 
