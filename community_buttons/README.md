@@ -8,3 +8,4 @@ We welcome contributions!
 - [Kagi Summarize](Kagi%20Summarize.plist): Open current page in Kagi Universal Summarizer
 - [Open in Internet Archive](Open%20in%20Internet%20Archive.plist): Open current page in Internet Archive
 - [Text to Speech](Text%20to%20Speech.plist): Read highlighted text using Mac native Speech
+- [Send Tabs to Firefox](Send%20Tabs%20to%20Firefox.plist): Open all Orion Browser tabs in Firefox
