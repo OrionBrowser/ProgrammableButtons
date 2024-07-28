@@ -9,3 +9,7 @@ We welcome contributions!
 - [Open in Internet Archive](Open%20in%20Internet%20Archive.plist): Open current page in Internet Archive
 - [Text to Speech](Text%20to%20Speech.plist): Read highlighted text using Mac native Speech
 - [Send Tabs to Firefox](Send%20Tabs%20to%20Firefox.plist): Open all Orion Browser tabs in Firefox
+- [Duplicate Current Tab in Safari](Duplicate%20Current%20Tab%20in%20Safari.plist): Open a copy of the current tab in Safari
+- [Send Current Tab to Safari](Send%20Current%20Tab%20to%20Safari.plist): Open a copy of the current tab in Safari AND close the original tab in Orion
+- [Duplicate Current Tab in Firefox](Duplicate%20Current%20Tab%20in%20Firefox.plist): Open a copy of the current tab in Firefox
+- [Send Current Tab to Firefox](Send%20Current%20Tab%20to%20Firefox.plist): Open a copy of the current tab in Firefox AND close the original tab in Orion
