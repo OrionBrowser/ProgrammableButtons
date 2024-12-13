@@ -10,9 +10,17 @@ Orion is modern, high performance, WebKit based, zero-telemetry browser for Appl
 
 ## Programmable Button demos
 
-Usage:
-- Right click and copy the link to the button. 
-- Right click Orion toolbar and select "Import Button from URL". 
+Usage: 
+
+Import a button from URL
+- Control-click (right-click) a button link, then choose Copy Link.
+- Control-click the Orion toolbar and select "Import Button from URL".
+- Paste the copied URL, then click Import.
+
+Import a button from file
+- Prepare button.plist file (download one below, export from another Orion instance). 
+- Control-click Orion toolbar and select "Import Button from File".
+- Choose the file, then click Open.
 
 ### Browser interaction buttons
 
@@ -37,7 +45,10 @@ Currently available are:
 - [Copy page link as Markdown](https://github.com/OrionBrowser/ProgrammableButtons/blob/main/community_buttons/Copy%20page%20link%20as%20Markdown.plist): Copies the page link as a Markdown link.
 - [Discuss document or page](https://github.com/OrionBrowser/ProgrammableButtons/blob/main/community_buttons/Discuss%20doc%20or%20page.plist): Ask questions or discuss a document or page via AI chat.
 - [Remove YT playlist URL](https://github.com/OrionBrowser/ProgrammableButtons/blob/main/community_buttons/Remove%20YT%20Playlist%20URL.plist): Remove the playlist part of the YouTube video URL.
-
+- [Open in Internet Archive](https://github.com/OrionBrowser/ProgrammableButtons/blob/main/community_buttons/Open%20in%20Internet%20Archive.plist): Open current page in Internet Archive.
+- [Text to Speech](https://github.com/OrionBrowser/ProgrammableButtons/blob/main/community_buttons/Text%20to%20Speech.plist): Read highlighted text using Mac native Speech.
+- [Send Tabs to Firefox](https://github.com/OrionBrowser/ProgrammableButtons/blob/main/community_buttons/Send%20Tabs%20to%20Firefox.plist): Open all Orion Browser tabs in Firefox.
+- [Save page link to Raindrop.io](Save%20to%20Raindrop.io.plist): Save page link to your Raindrop.io account with working keyboard shortcut.
 ## Demo
 
 Cick the thumbnail to watch the video.
